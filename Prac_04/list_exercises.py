@@ -31,4 +31,16 @@ def num_input():
     return numbers
 
 
+usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45',
+             'BaseInterpreterInterface', 'BaseStdIn', 'Command', 'ExecState',
+             'InteractiveConsole', 'InterpreterInterface', 'StartServer', 'bob']
+
+
+def user_input():
+
+    username = input("Please enter your username:")
+
+    return username
+
+
 main()
