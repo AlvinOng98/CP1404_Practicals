@@ -32,7 +32,7 @@ def list_str():
     outputStr = ""
     for subList in mainList:
         for l in subList:
-            newStr = "{} is taught by {} and has {} students".format(l[0], l[1], l[2])
+            newStr = "{} is taught by {:12} and has {:>3} students".format(l[0], l[1], l[2])
             strList.append(newStr)
     for ele in strList:
         outputStr += '{}\n'.format(ele)
