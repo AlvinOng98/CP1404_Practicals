@@ -8,8 +8,8 @@ FILENAME = "subject_data.txt"
 
 def main():
 
-    data = get_data()
-    print(data)
+    output = list_str()
+    print(output)
 
 
 def get_data():
@@ -23,6 +23,21 @@ def get_data():
         data_list.append(parts)
     input_file.close()
     return data_list
+
+
+def list_str():
+
+    mainList = [get_data()]
+    strList = []
+    outputStr = ""
+    for subList in mainList:
+        for l in subList:
+            newStr = "{} is taught by {} and has {} students".format(l[0], l[1], l[2])
+            strList.append(newStr)
+    for ele in strList:
+        outputStr += '{}\n'.format(ele)
+    return outputStr
+
 
 
 main()
