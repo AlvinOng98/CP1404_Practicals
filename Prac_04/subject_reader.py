@@ -26,6 +26,7 @@ def get_data():
     return data_list
 
 
+# function converts list into a string
 def list_str():
 
     mainList = [get_data()]
