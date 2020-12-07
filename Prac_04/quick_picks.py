@@ -4,10 +4,12 @@ Student Name: Alvin Ong Zhi Xiang
 Quick picks
 """
 
+import random
 
 def main():
 
     times = num_picks()
+    print(picks_generation())
 
 
 # function to get user input on how many quick picks they want
@@ -25,5 +27,15 @@ def num_picks():
         except ValueError:
             print("Invalid input")
     return number_of_picks
+
+
+# function to randomly generate 6 numbers into a list
+def picks_generation():
+
+    pick_list = []
+    for i in range(0, 6):
+        pick_list.append(random.randint(1, 45))
+    return pick_list
+
 
 main()
