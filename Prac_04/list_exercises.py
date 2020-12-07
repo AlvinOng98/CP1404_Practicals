@@ -39,12 +39,14 @@ def num_input():
     return numbers
 
 
+# function to get username from user
 def user_input():
     username = input("Please enter your username:")
 
     return username
 
 
+# function checks if username is in the list
 def user_check(username, userNames):
     if username in userNames:
         return True
