@@ -6,10 +6,12 @@ Quick picks
 
 import random
 
+
 def main():
 
     times = num_picks()
-    print(picks_generation())
+    for t in range(0, times):
+        print(picks_generation())
 
 
 # function to get user input on how many quick picks they want
@@ -35,7 +37,9 @@ def picks_generation():
     pick_list = []
     for i in range(0, 6):
         pick_list.append(random.randint(1, 45))
-    return pick_list
+    pickStr = "{:>3}{:>3}{:>3}{:>3}{:>3}{:>3}".format(pick_list[0], pick_list[1], pick_list[2],
+                                                      pick_list[3], pick_list[4], pick_list[5])
+    return pickStr
 
 
 main()
