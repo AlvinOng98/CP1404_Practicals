@@ -41,4 +41,5 @@ def display_emails(emails):
     for key, value in emails.items():
         print("{} ({})".format(key, value))
 
+
 main()
