@@ -30,5 +30,10 @@ class MilesToKmConverter(App):
         except ValueError:
             return 0
 
+    def handle_increment(self, change):
+        value = self.get_miles() + change
+        self.root.ids.miles_input.text = str(value)
+        self.handle_calculate()
+
 
 MilesToKmConverter().run()
