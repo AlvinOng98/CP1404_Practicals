@@ -9,7 +9,7 @@ def main():
     """Demo test code to show how to use taxi class."""
 
     # Prius 1 (100 fuel, fare = 1.23/km)
-    prius = Taxi("Prius 1", 100, 1.23)
+    prius = Taxi("Prius 1", 100)
     prius.drive(40)
     print(prius, "\nCurrent fare = ${:.2f}".format(prius.get_fare()))
     prius.start_fare()
